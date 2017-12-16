@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E320A01A96D271ED9DA423A /* Pods_Flack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14971DAF41AC6C0089D7C3 /* Pods_Flack.framework */; };
+		7D67F23B1FE5AA2900AB1300 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */; };
 		7DC4F5F61FE43318004446B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC4F5F51FE43318004446B2 /* AppDelegate.swift */; };
 		7DC4F5FB1FE43318004446B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC4F5F91FE43318004446B2 /* Main.storyboard */; };
 		7DC4F5FD1FE43318004446B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC4F5FC1FE43318004446B2 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		3F14971DAF41AC6C0089D7C3 /* Pods_Flack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55123A4D427341D07121E529 /* Pods-Flack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flack/Pods-Flack.debug.xcconfig"; sourceTree = "<group>"; };
 		5F88A0795B47820A86B9FC1E /* Pods-Flack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flack/Pods-Flack.release.xcconfig"; sourceTree = "<group>"; };
+		7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7DC4F5F21FE43318004446B2 /* Flack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC4F5F51FE43318004446B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC4F5FA1FE43318004446B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				7DE7259A1FE5398A00B3617D /* ChannelVC.swift */,
 				7DE7259C1FE539A500B3617D /* ChatVC.swift */,
 				7DE725A01FE597CF00B3617D /* LoginVC.swift */,
+				7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				7DC4F5F61FE43318004446B2 /* AppDelegate.swift in Sources */,
 				7DE725A11FE597CF00B3617D /* LoginVC.swift in Sources */,
 				7DE7259F1FE5698700B3617D /* GradientView.swift in Sources */,
+				7D67F23B1FE5AA2900AB1300 /* CreateAccountVC.swift in Sources */,
 				7DE7259B1FE5398A00B3617D /* ChannelVC.swift in Sources */,
 				7DC4F60B1FE438F5004446B2 /* SWRevealViewController.m in Sources */,
 			);
