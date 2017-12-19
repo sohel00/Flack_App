@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E320A01A96D271ED9DA423A /* Pods_Flack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14971DAF41AC6C0089D7C3 /* Pods_Flack.framework */; };
+		7D5015D41FE9A2820045DC46 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5015D31FE9A2820045DC46 /* UserDataService.swift */; };
 		7D67F23B1FE5AA2900AB1300 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */; };
 		7D69EE801FE79BC700282BF9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69EE7F1FE79BC700282BF9 /* AuthService.swift */; };
 		7D69EE831FE79CC800282BF9 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69EE821FE79CC800282BF9 /* constants.swift */; };
@@ -27,6 +28,7 @@
 		3F14971DAF41AC6C0089D7C3 /* Pods_Flack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55123A4D427341D07121E529 /* Pods-Flack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flack/Pods-Flack.debug.xcconfig"; sourceTree = "<group>"; };
 		5F88A0795B47820A86B9FC1E /* Pods-Flack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flack/Pods-Flack.release.xcconfig"; sourceTree = "<group>"; };
+		7D5015D31FE9A2820045DC46 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7D69EE7F1FE79BC700282BF9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7D69EE821FE79CC800282BF9 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				7D69EE7F1FE79BC700282BF9 /* AuthService.swift */,
+				7D5015D31FE9A2820045DC46 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				7DE7259D1FE539A500B3617D /* ChatVC.swift in Sources */,
 				7D7A2B231FE812FB00CF6749 /* RoundedButton.swift in Sources */,
 				7DC4F5F61FE43318004446B2 /* AppDelegate.swift in Sources */,
+				7D5015D41FE9A2820045DC46 /* UserDataService.swift in Sources */,
 				7D69EE831FE79CC800282BF9 /* constants.swift in Sources */,
 				7DE725A11FE597CF00B3617D /* LoginVC.swift in Sources */,
 				7DE7259F1FE5698700B3617D /* GradientView.swift in Sources */,

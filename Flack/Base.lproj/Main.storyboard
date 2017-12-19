@@ -376,6 +376,7 @@
                                 <state key="normal" title="Generate background colour"/>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="hjX-Py-INF" eventType="touchUpInside" id="qxD-vB-wyG"/>
+                                    <action selector="generateBgColorPressed:" destination="II4-am-4oy" eventType="touchUpInside" id="wet-Az-1Ux"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51G-va-sdu">
@@ -385,6 +386,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Choose Avatar"/>
+                                <connections>
+                                    <action selector="chooseAvatarPressed:" destination="II4-am-4oy" eventType="touchUpInside" id="esJ-Tp-Kyw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXM-Ff-fOp" customClass="RoundedButton" customModule="Flack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="705" width="250" height="50"/>
