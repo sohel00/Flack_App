@@ -49,7 +49,7 @@ class CreateAccountVC: UIViewController {
                         print(AuthService.instance.authToken)
                         AuthService.instance.addUser(name: name, email: email, avatarname: self.avatarname, avatarcolor: self.avatarcolor, completion: { (response) in
                             if response {
-                               print(UserDataService.instance.name , UserDataService.instance.avatarName, UserDataService.instance.id, UserDataService.instance.email)
+                               print(UserDataService.instance.name , UserDataService.instance.avatarName, UserDataService.instance.id, UserDataService.instance.email, UserDataService.instance.avatarName)
                                 self.performSegue(withIdentifier: "unwindToChannelVC", sender: nil)
                             }
                         })
@@ -61,6 +61,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func chooseAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toAvatarPicker", sender: nil)
     }
     
     @IBAction func generateBgColorPressed(_ sender: Any) {

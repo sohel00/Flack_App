@@ -11,11 +11,11 @@ import Foundation
 
 class UserDataService {
     static let instance = UserDataService()
-    var id = ""
-    var name = ""
-    var email = ""
-    var avatarName = ""
-    var avatarColor = ""
+    public private(set) var id = ""
+    public private(set) var name = ""
+    public private(set) var email = ""
+    public private(set) var avatarName = ""
+    public private(set) var avatarColor = ""
     
     
     func userData (name:String, email:String, avatarName:String,
