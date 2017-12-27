@@ -196,7 +196,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P6-rr-DA2">
-                                <rect key="frame" x="322" y="44" width="28" height="28"/>
+                                <rect key="frame" x="327" y="44" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="closeBtnTapped" destination="hjX-Py-INF" eventType="touchUpInside" id="ilA-SQ-6wc"/>
@@ -272,7 +272,7 @@
                             <constraint firstItem="b4d-N3-Kj9" firstAttribute="top" secondItem="ZL8-fX-4WB" secondAttribute="bottom" id="ncD-7G-Nex"/>
                             <constraint firstItem="ZL8-fX-4WB" firstAttribute="top" secondItem="KfZ-dS-apM" secondAttribute="bottom" constant="55" id="nz0-K5-Egk"/>
                             <constraint firstItem="ZL8-fX-4WB" firstAttribute="centerX" secondItem="AK3-1B-tOl" secondAttribute="centerX" id="vBp-FM-RPH"/>
-                            <constraint firstItem="Cab-CK-u7D" firstAttribute="trailing" secondItem="5P6-rr-DA2" secondAttribute="trailing" constant="25" id="xjo-hS-6Yf"/>
+                            <constraint firstItem="Cab-CK-u7D" firstAttribute="trailing" secondItem="5P6-rr-DA2" secondAttribute="trailing" constant="20" id="xjo-hS-6Yf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cab-CK-u7D"/>
                     </view>
@@ -294,7 +294,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGE-Cy-hEL">
-                                <rect key="frame" x="331" y="44" width="28" height="28"/>
+                                <rect key="frame" x="327" y="44" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="closeBtnTapped" destination="hjX-Py-INF" eventType="touchUpInside" id="580-Xe-ck7"/>
@@ -414,7 +414,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7qN-RI-Xrv" firstAttribute="centerX" secondItem="3uB-xh-ziE" secondAttribute="centerX" id="2Jw-Fw-mQw"/>
-                            <constraint firstItem="uA1-gH-jDE" firstAttribute="trailing" secondItem="yGE-Cy-hEL" secondAttribute="trailing" constant="16" id="FLs-vw-fcV"/>
+                            <constraint firstItem="uA1-gH-jDE" firstAttribute="trailing" secondItem="yGE-Cy-hEL" secondAttribute="trailing" constant="20" id="FLs-vw-fcV"/>
                             <constraint firstItem="vIK-Tu-kB6" firstAttribute="top" secondItem="uA1-gH-jDE" secondAttribute="top" constant="55" id="Goy-ou-VPH"/>
                             <constraint firstItem="dNZ-nH-pC2" firstAttribute="top" secondItem="vIK-Tu-kB6" secondAttribute="bottom" constant="65" id="Jfr-PL-T62"/>
                             <constraint firstItem="51G-va-sdu" firstAttribute="width" secondItem="AgK-19-2ZE" secondAttribute="width" id="MuA-v1-FCu"/>
@@ -434,6 +434,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="ghI-4e-gRG" id="756-f3-bhG"/>
                         <outlet property="passTxt" destination="2mW-yV-BSj" id="h4Z-hK-Bpg"/>
+                        <outlet property="userImg" destination="AgK-19-2ZE" id="o6A-VI-Nfr"/>
                         <outlet property="userTxt" destination="uW4-qh-L6A" id="B0r-9v-mn1"/>
                         <segue destination="fli-R6-Hc6" kind="unwind" identifier="unwindToChannelVC" unwindAction="unwindToChannelVCWithA:" id="A7c-fw-5sE"/>
                         <segue destination="qfi-8O-P9j" kind="show" identifier="toAvatarPicker" id="FU8-Iz-G1I"/>
@@ -447,7 +448,6 @@
         <!--Avatar PickerVC-->
         <scene sceneID="5Dh-xD-TMO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5b7-NS-xAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="qfi-8O-P9j" customClass="AvatarPickerVC" customModule="Flack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyS-A5-zJs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -531,6 +531,7 @@
                         <outlet property="segmentControl" destination="WId-LH-xrm" id="NVX-IP-8mK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5b7-NS-xAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3024.8000000000002" y="-39.162561576354683"/>
         </scene>

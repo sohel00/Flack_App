@@ -17,7 +17,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var userTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
-    
+    @IBOutlet weak var userImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,12 @@ class CreateAccountVC: UIViewController {
     }
     
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarname = UserDataService.instance.avatarName
+        }
+    }
    
     
     
@@ -49,7 +54,7 @@ class CreateAccountVC: UIViewController {
                         print(AuthService.instance.authToken)
                         AuthService.instance.addUser(name: name, email: email, avatarname: self.avatarname, avatarcolor: self.avatarcolor, completion: { (response) in
                             if response {
-                               print(UserDataService.instance.name , UserDataService.instance.avatarName, UserDataService.instance.id, UserDataService.instance.email, UserDataService.instance.avatarName)
+                               print(UserDataService.instance.name , UserDataService.instance.avatarName, UserDataService.instance.id, UserDataService.instance.email)
                                 self.performSegue(withIdentifier: "unwindToChannelVC", sender: nil)
                             }
                         })
