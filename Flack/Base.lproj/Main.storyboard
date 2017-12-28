@@ -124,7 +124,7 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTI-fc-Ba8">
-                                <rect key="frame" x="111" y="724" width="46" height="33"/>
+                                <rect key="frame" x="101" y="724" width="46" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,12 +149,13 @@
                             <constraint firstItem="M0x-KG-6oC" firstAttribute="leading" secondItem="a1Z-QJ-hKF" secondAttribute="leading" constant="16" id="oWq-06-MQA"/>
                             <constraint firstItem="UuY-0S-Td4" firstAttribute="top" secondItem="a1Z-QJ-hKF" secondAttribute="top" constant="24" id="od7-0m-tfz"/>
                             <constraint firstItem="jkp-uk-bHf" firstAttribute="leading" secondItem="a1Z-QJ-hKF" secondAttribute="leading" id="zYR-Iq-e8A"/>
-                            <constraint firstItem="cTI-fc-Ba8" firstAttribute="leading" secondItem="M0x-KG-6oC" secondAttribute="trailing" constant="20" id="zYw-yL-c8v"/>
+                            <constraint firstItem="cTI-fc-Ba8" firstAttribute="leading" secondItem="M0x-KG-6oC" secondAttribute="trailing" constant="10" id="zYw-yL-c8v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a1Z-QJ-hKF"/>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="cTI-fc-Ba8" id="J5M-Q1-LUs"/>
+                        <outlet property="userImg" destination="M0x-KG-6oC" id="S7J-7v-CSe"/>
                         <segue destination="hjX-Py-INF" kind="show" identifier="toLogin" id="8ZY-nk-3y3"/>
                     </connections>
                 </viewController>
