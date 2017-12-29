@@ -3,8 +3,8 @@
 //  Flack
 //
 //  Created by Sohel Dhengre on 16/12/17.
-//  Copyright © 2017 Sohel Dengre. All rights reserved.
-//
+//  Copyright © 2017 Sohel Dhengre. All rights reserved.
+
 
 import UIKit
 
@@ -35,7 +35,13 @@ class ChannelVC: UIViewController {
     }
 
     @IBAction func loginBtnTapped(_ sender: Any) {
+        if AuthService.instance.isLoggedIn{
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
         performSegue(withIdentifier: "toLogin", sender: nil)
+        }
     }
     
     @IBAction func unwindToChannelVC(a: UIStoryboardSegue){}
