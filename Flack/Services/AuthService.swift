@@ -90,9 +90,7 @@ class AuthService {
     func addUser(name:String, email:String, avatarname:String, avatarcolor:String, completion: @escaping completionHandler){
         let lowerCaseEmail = email.lowercased()
         
-       let header = [
-        "content-type": "application/json; charset=utf-8",
-        "Authorization": "Bearer \(authToken)"]
+       
         
         let body:[String: Any] = [
             "name" : name,
@@ -101,7 +99,7 @@ class AuthService {
             "avatarColor" : avatarcolor
         ]
         
-        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             if response.result.error == nil {
                 //JSON parsing using SwiftyJSON
                 guard let data = response.data else {return}
@@ -123,9 +121,25 @@ class AuthService {
         }
     }
     
-    
+    func findUserByEmail(completion:@escaping completionHandler){
+        Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            guard let data = response.data else {return}
+            do{
+                let json = try JSON(data: data)
+                let email = json["email"].stringValue
+                let name = json["name"].stringValue
+                let avatarname = json["avatarName"].stringValue
+                let avatarcolor = json["avatarColor"].stringValue
+                let id = json["_id"].stringValue
+                
+                UserDataService.instance.userData(name: name, email: email, avatarName: avatarname, avatarColor: avatarcolor, id: id)
+            } catch{debugPrint(error)}
+            completion(true)
+        }
+    }
     
 
+    
     
 
     

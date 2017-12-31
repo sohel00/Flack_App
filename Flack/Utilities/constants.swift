@@ -16,6 +16,7 @@ let BASE_URL = "https://flackapp.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
 //notification
 let USER_DATA_DID_CHANGE = Notification.Name("NotifUserDataChanged")
@@ -24,3 +25,15 @@ let USER_DATA_DID_CHANGE = Notification.Name("NotifUserDataChanged")
 let LOGGED_IN_KEY = "loggedIn"
 let TOKEN_KEY = "token"
 let USER_EMAIL = "userEmail"
+
+//Header
+let BEARER_HEADER =  [
+    "content-type": "application/json; charset=utf-8",
+    "Authorization": "Bearer \(AuthService.instance.authToken)"]
+
+
+
+
+
+
+

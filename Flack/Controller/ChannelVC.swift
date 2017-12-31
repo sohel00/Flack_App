@@ -21,17 +21,12 @@ class ChannelVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.userDataDidChange), name: USER_DATA_DID_CHANGE, object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setUpUserData()
+    }
+    
     @objc func userDataDidChange(){
-        if AuthService.instance.isLoggedIn {
-            loginBtn.setTitle(UserDataService.instance.name, for: .normal)
-            userImg.image = UIImage(named: UserDataService.instance.avatarName)
-            userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-        } else {
-            loginBtn.setTitle("Login", for: .normal)
-            userImg.image = UIImage(named: "menuProfileIcon")
-            userImg.backgroundColor = UIColor.clear
-        }
-        
+        setUpUserData()
     }
 
     @IBAction func loginBtnTapped(_ sender: Any) {
@@ -41,6 +36,18 @@ class ChannelVC: UIViewController {
             present(profile, animated: true, completion: nil)
         } else {
         performSegue(withIdentifier: "toLogin", sender: nil)
+        }
+    }
+    
+    func setUpUserData(){
+        if AuthService.instance.isLoggedIn {
+            loginBtn.setTitle(UserDataService.instance.name, for: .normal)
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
+        } else {
+            loginBtn.setTitle("Login", for: .normal)
+            userImg.image = UIImage(named: "menuProfileIcon")
+            userImg.backgroundColor = UIColor.clear
         }
     }
     
