@@ -18,6 +18,9 @@
 		7D7A2B231FE812FB00CF6749 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A2B221FE812FB00CF6749 /* RoundedButton.swift */; };
 		7D7CD14E1FF6171000EF6189 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7CD14C1FF6171000EF6189 /* ProfileVC.swift */; };
 		7D7CD14F1FF6171000EF6189 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7CD14D1FF6171000EF6189 /* ProfileVC.xib */; };
+		7DACB0691FFA124B001BB3F1 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACB0681FFA124B001BB3F1 /* MessageService.swift */; };
+		7DACB06B1FFA1260001BB3F1 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACB06A1FFA1260001BB3F1 /* Channel.swift */; };
+		7DACB06D1FFA2C76001BB3F1 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACB06C1FFA2C76001BB3F1 /* ChannelCell.swift */; };
 		7DC4F5F61FE43318004446B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC4F5F51FE43318004446B2 /* AppDelegate.swift */; };
 		7DC4F5FB1FE43318004446B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC4F5F91FE43318004446B2 /* Main.storyboard */; };
 		7DC4F5FD1FE43318004446B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC4F5FC1FE43318004446B2 /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 		7D7A2B221FE812FB00CF6749 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		7D7CD14C1FF6171000EF6189 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		7D7CD14D1FF6171000EF6189 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		7DACB0681FFA124B001BB3F1 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		7DACB06A1FFA1260001BB3F1 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		7DACB06C1FFA2C76001BB3F1 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		7DC4F5F21FE43318004446B2 /* Flack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC4F5F51FE43318004446B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC4F5FA1FE43318004446B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 			children = (
 				7D69EE7F1FE79BC700282BF9 /* AuthService.swift */,
 				7D5015D31FE9A2820045DC46 /* UserDataService.swift */,
+				7DACB0681FFA124B001BB3F1 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				7D7A2B221FE812FB00CF6749 /* RoundedButton.swift */,
 				7D78ADCD1FEA53CE000B2D08 /* AvatarCell.swift */,
 				7D64ECBD1FF4BF7400003470 /* CircleImage.swift */,
+				7DACB06C1FFA2C76001BB3F1 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 		7DE725991FE5397200B3617D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7DACB06A1FFA1260001BB3F1 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,10 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7CD14E1FF6171000EF6189 /* ProfileVC.swift in Sources */,
+				7DACB06D1FFA2C76001BB3F1 /* ChannelCell.swift in Sources */,
 				7DE7259D1FE539A500B3617D /* ChatVC.swift in Sources */,
 				7D78ADCC1FEA4C30000B2D08 /* AvatarPickerVC.swift in Sources */,
 				7D7A2B231FE812FB00CF6749 /* RoundedButton.swift in Sources */,
+				7DACB06B1FFA1260001BB3F1 /* Channel.swift in Sources */,
 				7D64ECBE1FF4BF7400003470 /* CircleImage.swift in Sources */,
+				7DACB0691FFA124B001BB3F1 /* MessageService.swift in Sources */,
 				7DC4F5F61FE43318004446B2 /* AppDelegate.swift in Sources */,
 				7D5015D41FE9A2820045DC46 /* UserDataService.swift in Sources */,
 				7D69EE831FE79CC800282BF9 /* constants.swift in Sources */,

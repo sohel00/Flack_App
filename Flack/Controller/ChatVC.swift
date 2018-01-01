@@ -26,6 +26,8 @@ class ChatVC: UIViewController {
                     NotificationCenter.default.post(name: USER_DATA_DID_CHANGE, object: nil)
             })
         }
+        
+        
     }
 
    
