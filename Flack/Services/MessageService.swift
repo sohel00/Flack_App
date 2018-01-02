@@ -30,7 +30,7 @@ class MessageService{
                             let channel = Channel(title: name, desc: desc, id: id)
                             self.channel.append(channel)
                         }
-//                        print(self.channel[0].title)
+//                        
                         completion(true)
                     }
                 } catch {debugPrint(Error.self)}

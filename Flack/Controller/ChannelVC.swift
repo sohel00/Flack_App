@@ -13,10 +13,14 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     @IBOutlet weak var loginBtn: UIButton!
-    
     @IBOutlet weak var userImg: CircleImage!
-    
     @IBOutlet weak var tableview: UITableView!
+    @IBAction func addChannelPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,11 +28,22 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableview.dataSource = self
         self.revealViewController().rearViewRevealWidth = view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(self.userDataDidChange), name: USER_DATA_DID_CHANGE, object: nil)
+        
+        SocketService.instance.getChannel { (success) in
+            if success {
+                self.tableview.reloadData()
+            }
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         setUpUserData()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        setUpUserData()
+    }
+    
     
     @objc func userDataDidChange(){
         setUpUserData()
@@ -67,7 +82,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return cell
         } else {
-            return ChannelCell()
+            return UITableViewCell()
     }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
