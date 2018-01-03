@@ -15,6 +15,7 @@
 		7D67F23B1FE5AA2900AB1300 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */; };
 		7D69EE801FE79BC700282BF9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69EE7F1FE79BC700282BF9 /* AuthService.swift */; };
 		7D69EE831FE79CC800282BF9 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69EE821FE79CC800282BF9 /* constants.swift */; };
+		7D6B87351FFCC8130063CE62 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B87341FFCC8130063CE62 /* Message.swift */; };
 		7D70B05E1FFB591700E16997 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70B05D1FFB591700E16997 /* SocketService.swift */; };
 		7D78ADCC1FEA4C30000B2D08 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78ADCB1FEA4C30000B2D08 /* AvatarPickerVC.swift */; };
 		7D78ADCE1FEA53CE000B2D08 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D78ADCD1FEA53CE000B2D08 /* AvatarCell.swift */; };
@@ -46,6 +47,7 @@
 		7D67F23A1FE5AA2900AB1300 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		7D69EE7F1FE79BC700282BF9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7D69EE821FE79CC800282BF9 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		7D6B87341FFCC8130063CE62 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7D70B05D1FFB591700E16997 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		7D78ADCB1FEA4C30000B2D08 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		7D78ADCD1FEA53CE000B2D08 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				7DACB06A1FFA1260001BB3F1 /* Channel.swift */,
+				7D6B87341FFCC8130063CE62 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				7DE7259D1FE539A500B3617D /* ChatVC.swift in Sources */,
 				7D78ADCC1FEA4C30000B2D08 /* AvatarPickerVC.swift in Sources */,
 				7D7A2B231FE812FB00CF6749 /* RoundedButton.swift in Sources */,
+				7D6B87351FFCC8130063CE62 /* Message.swift in Sources */,
 				7DACB06B1FFA1260001BB3F1 /* Channel.swift in Sources */,
 				7D64ECBE1FF4BF7400003470 /* CircleImage.swift in Sources */,
 				7DACB0691FFA124B001BB3F1 /* MessageService.swift in Sources */,

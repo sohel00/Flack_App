@@ -9,7 +9,6 @@
 import Foundation
 
 struct Channel {
-    
     public private(set) var title: String
     public private(set) var desc:String
     public private(set) var id:String
