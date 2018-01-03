@@ -21,6 +21,8 @@ let URL_GET_CHANNELS = "\(BASE_URL)channel/"
 
 //notification
 let USER_DATA_DID_CHANGE = Notification.Name("NotifUserDataChanged")
+let USER_DATA_LOADED = Notification.Name("USERDATALOADED")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelselected")
 
 //User Defaults
 let LOGGED_IN_KEY = "loggedIn"
