@@ -8,17 +8,25 @@
 
 import UIKit
 
-class ChatVC: UIViewController {
+class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
 
     //outlets
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var barTitle: UILabel!
     @IBOutlet weak var message: UITextField!
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.bindToKeyboard()
+        
+        tableview.delegate = self
+        tableview.dataSource = self
+        tableview.estimatedRowHeight = 80
+        tableview.rowHeight = UITableViewAutomaticDimension
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
         view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
@@ -88,10 +96,27 @@ class ChatVC: UIViewController {
     func getMesssages(){
         guard let channelid = MessageService.instance.selectedChannel?.id else {return}
         MessageService.instance.findAllMessages(id: channelid) { (success) in
-        
+        self.tableview.reloadData()
         }
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return MessageService.instance.message.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
+            let message = MessageService.instance.message[indexPath.row]
+            cell.configureCell(message: message)
+        return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
    
 
 }
