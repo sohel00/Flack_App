@@ -265,12 +265,12 @@
                         <constraints>
                             <constraint firstItem="UuY-0S-Td4" firstAttribute="leading" secondItem="a1Z-QJ-hKF" secondAttribute="leading" constant="16" id="2CC-cB-KWX"/>
                             <constraint firstItem="jkp-uk-bHf" firstAttribute="trailing" secondItem="a1Z-QJ-hKF" secondAttribute="trailing" id="3T9-VR-1Z9"/>
+                            <constraint firstAttribute="bottom" secondItem="M0x-KG-6oC" secondAttribute="bottom" constant="34" id="5cT-FU-WNS"/>
                             <constraint firstItem="bjO-vS-jS9" firstAttribute="top" secondItem="UuY-0S-Td4" secondAttribute="bottom" constant="20" id="9dY-zL-deT"/>
                             <constraint firstItem="cTI-fc-Ba8" firstAttribute="centerY" secondItem="M0x-KG-6oC" secondAttribute="centerY" id="A4i-K0-7pg"/>
                             <constraint firstItem="a1Z-QJ-hKF" firstAttribute="trailing" secondItem="3Oi-oG-dUS" secondAttribute="trailing" constant="72" id="B8y-oe-Ymg"/>
                             <constraint firstItem="bjO-vS-jS9" firstAttribute="leading" secondItem="a1Z-QJ-hKF" secondAttribute="leading" constant="16" id="DyG-jV-tjf"/>
                             <constraint firstItem="3Oi-oG-dUS" firstAttribute="centerY" secondItem="bjO-vS-jS9" secondAttribute="centerY" id="FNs-dn-I7d"/>
-                            <constraint firstItem="M0x-KG-6oC" firstAttribute="bottom" secondItem="a1Z-QJ-hKF" secondAttribute="bottom" id="LcE-d5-ZCp"/>
                             <constraint firstItem="M0x-KG-6oC" firstAttribute="top" secondItem="jkp-uk-bHf" secondAttribute="bottom" constant="20" id="laK-r7-bdv"/>
                             <constraint firstItem="jkp-uk-bHf" firstAttribute="top" secondItem="3Oi-oG-dUS" secondAttribute="bottom" constant="20" id="oNU-qT-Xku"/>
                             <constraint firstItem="M0x-KG-6oC" firstAttribute="leading" secondItem="a1Z-QJ-hKF" secondAttribute="leading" constant="16" id="oWq-06-MQA"/>

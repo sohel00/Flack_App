@@ -81,10 +81,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     NotificationCenter.default.post(name: USER_DATA_DID_CHANGE, object: nil)
             })
         }
-        
-        
-        
-        
     }
     
     @IBAction func editing(_ sender: Any) {

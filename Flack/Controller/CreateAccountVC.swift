@@ -71,7 +71,6 @@ class CreateAccountVC: UIViewController {
                 })
             }
         }
-        
     }
     
     @IBAction func chooseAvatarPressed(_ sender: Any) {
