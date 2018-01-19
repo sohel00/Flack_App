@@ -234,14 +234,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7t-dQ-l5l">
-                                                    <rect key="frame" x="15" y="12" width="104" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7t-dQ-l5l">
+                                                    <rect key="frame" x="15" y="12" width="320" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f7t-dQ-l5l" firstAttribute="top" secondItem="ywT-mB-hQE" secondAttribute="topMargin" constant="1" id="HFh-uq-RQR"/>
+                                                <constraint firstItem="f7t-dQ-l5l" firstAttribute="leading" secondItem="ywT-mB-hQE" secondAttribute="leadingMargin" id="WSL-Kk-Rtn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f7t-dQ-l5l" secondAttribute="trailing" constant="25" id="c0Z-eZ-ySw"/>
+                                                <constraint firstItem="f7t-dQ-l5l" firstAttribute="bottom" secondItem="ywT-mB-hQE" secondAttribute="bottomMargin" id="hUG-08-drs"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
