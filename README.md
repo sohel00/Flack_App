@@ -9,7 +9,7 @@ This app is a mockup/clone of slack.
 
 <br>
 
-#### API Used: 
+### API Used: 
 Chat App REST API with ES6 and Express.
 
 - ES6 support via [babel](https://babeljs.io)
