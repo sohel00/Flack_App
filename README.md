@@ -2,6 +2,12 @@
 This app is a mockup/clone of slack.
 <br>
 
+### Pods Used :
+```pod 'Alamofire'```
+```pod 'SwiftyJSON'```
+```pod 'Socket.IO-Client-Swift'```
+
+<br>
 #### API Used: 
 Chat App REST API with ES6 and Express.
 
